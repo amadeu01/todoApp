@@ -8,12 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		65586FDB1F1A369100E299C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65586FDA1F1A369100E299C8 /* AppDelegate.swift */; };
-		65586FDD1F1A369100E299C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65586FDC1F1A369100E299C8 /* ViewController.swift */; };
 		65586FE01F1A369100E299C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65586FDE1F1A369100E299C8 /* Main.storyboard */; };
 		65586FE21F1A369100E299C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65586FE11F1A369100E299C8 /* Assets.xcassets */; };
 		65586FE51F1A369100E299C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65586FE31F1A369100E299C8 /* LaunchScreen.storyboard */; };
 		65586FF01F1A369200E299C8 /* todoappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65586FEF1F1A369200E299C8 /* todoappTests.swift */; };
 		65586FFB1F1A369200E299C8 /* todoappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65586FFA1F1A369200E299C8 /* todoappUITests.swift */; };
+		6558700A1F1A5D6D00E299C8 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 655870081F1A5D6D00E299C8 /* Realm.framework */; };
+		6558700B1F1A5D6D00E299C8 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 655870081F1A5D6D00E299C8 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6558700C1F1A5D6D00E299C8 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 655870091F1A5D6D00E299C8 /* RealmSwift.framework */; };
+		6558700D1F1A5D6D00E299C8 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 655870091F1A5D6D00E299C8 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		65C2BCB41F1A76DC00A924F6 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C2BCB31F1A76DC00A924F6 /* Models.swift */; };
+		65C2BCB61F1A84D500A924F6 /* TodoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C2BCB51F1A84D500A924F6 /* TodoListTableViewController.swift */; };
+		65C2BCBB1F1A8DB200A924F6 /* TodoItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C2BCB91F1A8DB200A924F6 /* TodoItemTableViewCell.swift */; };
+		65C2BCBE1F1A8EB800A924F6 /* TodoItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C2BCBD1F1A8EB700A924F6 /* TodoItemDetailViewController.swift */; };
+		65C2BCC41F1AF0D700A924F6 /* ViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C2BCC31F1AF0D700A924F6 /* ViewControllerProtocol.swift */; };
+		65C2BCC61F1AF54500A924F6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C2BCC51F1AF54500A924F6 /* Constants.swift */; };
+		65C2BCCC1F1B12E600A924F6 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C2BCCB1F1B12E600A924F6 /* DLRadioButton.m */; };
+		65C2BCCD1F1B176E00A924F6 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C2BCCB1F1B12E600A924F6 /* DLRadioButton.m */; };
+		65C2BCCE1F1B178700A924F6 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C2BCCB1F1B12E600A924F6 /* DLRadioButton.m */; };
+		65C2BCD01F1B186000A924F6 /* todoapp-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 65C2BCC91F1B12E600A924F6 /* todoapp-Bridging-Header.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,10 +46,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6558700E1F1A5D6D00E299C8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6558700D1F1A5D6D00E299C8 /* RealmSwift.framework in Embed Frameworks */,
+				6558700B1F1A5D6D00E299C8 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		65586FD71F1A369100E299C8 /* todoapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todoapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65586FDA1F1A369100E299C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		65586FDC1F1A369100E299C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		65586FDF1F1A369100E299C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65586FE11F1A369100E299C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65586FE41F1A369100E299C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +74,17 @@
 		65586FF61F1A369200E299C8 /* todoappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = todoappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65586FFA1F1A369200E299C8 /* todoappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoappUITests.swift; sourceTree = "<group>"; };
 		65586FFC1F1A369200E299C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		655870081F1A5D6D00E299C8 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		655870091F1A5D6D00E299C8 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		65C2BCB31F1A76DC00A924F6 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		65C2BCB51F1A84D500A924F6 /* TodoListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListTableViewController.swift; sourceTree = "<group>"; };
+		65C2BCB91F1A8DB200A924F6 /* TodoItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoItemTableViewCell.swift; sourceTree = "<group>"; };
+		65C2BCBD1F1A8EB700A924F6 /* TodoItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoItemDetailViewController.swift; sourceTree = "<group>"; };
+		65C2BCC31F1AF0D700A924F6 /* ViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerProtocol.swift; sourceTree = "<group>"; };
+		65C2BCC51F1AF54500A924F6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		65C2BCC91F1B12E600A924F6 /* todoapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "todoapp-Bridging-Header.h"; sourceTree = "<group>"; };
+		65C2BCCA1F1B12E600A924F6 /* DLRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLRadioButton.h; sourceTree = "<group>"; };
+		65C2BCCB1F1B12E600A924F6 /* DLRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRadioButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +92,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6558700C1F1A5D6D00E299C8 /* RealmSwift.framework in Frameworks */,
+				6558700A1F1A5D6D00E299C8 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +117,8 @@
 		65586FCE1F1A369100E299C8 = {
 			isa = PBXGroup;
 			children = (
+				655870081F1A5D6D00E299C8 /* Realm.framework */,
+				655870091F1A5D6D00E299C8 /* RealmSwift.framework */,
 				65586FD91F1A369100E299C8 /* todoapp */,
 				65586FEE1F1A369200E299C8 /* todoappTests */,
 				65586FF91F1A369200E299C8 /* todoappUITests */,
@@ -98,11 +140,19 @@
 			isa = PBXGroup;
 			children = (
 				65586FDA1F1A369100E299C8 /* AppDelegate.swift */,
-				65586FDC1F1A369100E299C8 /* ViewController.swift */,
+				65C2BCB31F1A76DC00A924F6 /* Models.swift */,
 				65586FDE1F1A369100E299C8 /* Main.storyboard */,
+				65C2BCCA1F1B12E600A924F6 /* DLRadioButton.h */,
+				65C2BCCB1F1B12E600A924F6 /* DLRadioButton.m */,
 				65586FE11F1A369100E299C8 /* Assets.xcassets */,
 				65586FE31F1A369100E299C8 /* LaunchScreen.storyboard */,
 				65586FE61F1A369100E299C8 /* Info.plist */,
+				65C2BCB51F1A84D500A924F6 /* TodoListTableViewController.swift */,
+				65C2BCB91F1A8DB200A924F6 /* TodoItemTableViewCell.swift */,
+				65C2BCBD1F1A8EB700A924F6 /* TodoItemDetailViewController.swift */,
+				65C2BCC31F1AF0D700A924F6 /* ViewControllerProtocol.swift */,
+				65C2BCC51F1AF54500A924F6 /* Constants.swift */,
+				65C2BCC91F1B12E600A924F6 /* todoapp-Bridging-Header.h */,
 			);
 			path = todoapp;
 			sourceTree = "<group>";
@@ -135,6 +185,8 @@
 				65586FD31F1A369100E299C8 /* Sources */,
 				65586FD41F1A369100E299C8 /* Frameworks */,
 				65586FD51F1A369100E299C8 /* Resources */,
+				6558700E1F1A5D6D00E299C8 /* Embed Frameworks */,
+				6558700F1F1A605000E299C8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -152,6 +204,7 @@
 				65586FE71F1A369200E299C8 /* Sources */,
 				65586FE81F1A369200E299C8 /* Frameworks */,
 				65586FE91F1A369200E299C8 /* Resources */,
+				655870101F1A608100E299C8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -170,6 +223,7 @@
 				65586FF21F1A369200E299C8 /* Sources */,
 				65586FF31F1A369200E299C8 /* Frameworks */,
 				65586FF41F1A369200E299C8 /* Resources */,
+				655870111F1A608700E299C8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -194,6 +248,7 @@
 					65586FD61F1A369100E299C8 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = YMWQA4CLV6;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					65586FEA1F1A369200E299C8 = {
@@ -257,13 +312,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6558700F1F1A605000E299C8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"";
+		};
+		655870101F1A608100E299C8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"";
+		};
+		655870111F1A608700E299C8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		65586FD31F1A369100E299C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65586FDD1F1A369100E299C8 /* ViewController.swift in Sources */,
+				65C2BCD01F1B186000A924F6 /* todoapp-Bridging-Header.h in Sources */,
+				65C2BCBB1F1A8DB200A924F6 /* TodoItemTableViewCell.swift in Sources */,
+				65C2BCB41F1A76DC00A924F6 /* Models.swift in Sources */,
+				65C2BCC61F1AF54500A924F6 /* Constants.swift in Sources */,
 				65586FDB1F1A369100E299C8 /* AppDelegate.swift in Sources */,
+				65C2BCBE1F1A8EB800A924F6 /* TodoItemDetailViewController.swift in Sources */,
+				65C2BCCC1F1B12E600A924F6 /* DLRadioButton.m in Sources */,
+				65C2BCC41F1AF0D700A924F6 /* ViewControllerProtocol.swift in Sources */,
+				65C2BCB61F1A84D500A924F6 /* TodoListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65586FF01F1A369200E299C8 /* todoappTests.swift in Sources */,
+				65C2BCCD1F1B176E00A924F6 /* DLRadioButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65586FFB1F1A369200E299C8 /* todoappUITests.swift in Sources */,
+				65C2BCCE1F1B178700A924F6 /* DLRadioButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,11 +523,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = YMWQA4CLV6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = todoapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = amadeucavalcante.todoapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "todoapp/todoapp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -430,11 +543,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = YMWQA4CLV6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = todoapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = amadeucavalcante.todoapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "todoapp/todoapp-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -445,10 +564,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = YMWQA4CLV6;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = todoappTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = amadeucavalcante.todoappTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "todoapp/todoapp-Bridging-Header.h";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "todoapp/todoapp-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/todoapp.app/todoapp";
 			};
@@ -460,10 +582,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = YMWQA4CLV6;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = todoappTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = amadeucavalcante.todoappTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "todoapp/todoapp-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/todoapp.app/todoapp";
 			};
@@ -478,6 +602,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = amadeucavalcante.todoappUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "todoapp/todoapp-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = todoapp;
 			};
@@ -492,6 +617,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = amadeucavalcante.todoappUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "todoapp/todoapp-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = todoapp;
 			};
@@ -516,6 +642,7 @@
 				655870011F1A369200E299C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		655870021F1A369200E299C8 /* Build configuration list for PBXNativeTarget "todoappTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +651,7 @@
 				655870041F1A369200E299C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		655870051F1A369200E299C8 /* Build configuration list for PBXNativeTarget "todoappUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +660,7 @@
 				655870071F1A369200E299C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
